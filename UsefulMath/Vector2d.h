@@ -3,6 +3,8 @@
 
 #include <cmath>
 
+//typedef UsefulMath::Vector2 Vec2
+
 namespace UsefulMath
 {
 

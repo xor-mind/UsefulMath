@@ -3,7 +3,7 @@
 
 #include "Vector2D.h"
 
-namespace UsfulMath
+namespace UsefulMath
 {
 
 class Rectangle
@@ -18,7 +18,8 @@ public:
 	}
 	Rectangle(int left, int top, int right, int bottom)
 		: left(left), top(top), right(right), bottom(bottom) {}
-	Rectangle(Vector pos, Vector dim)
+
+	Rectangle(Vector2 pos,Vector2 dim)
 	{
 		left = (int)pos.x; top = (int)pos.y;
 		right = (int)(pos.x + dim.x);
