@@ -20,7 +20,11 @@ BOOST_AUTO_TEST_CASE( RecConstructor )
     BOOST_REQUIRE( r.left == 1.f && r.bottom == 4.f );
 }
 
-
+BOOST_AUTO_TEST_CASE( CalcDim )
+{
+	UsefulMath::Rectangle r(Vec2(1.f, 2.f),Vec2(1.f, 2.f));
+    BOOST_REQUIRE( r.w == 1.f && r.h == 2.f );
+}
 
 BOOST_AUTO_TEST_CASE( TestingDone )
 {
