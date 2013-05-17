@@ -48,6 +48,24 @@ public:
 	{
 		w = right - left; h = bottom - top; 
 	}
+
+	void CalcX2Y2()
+	{
+		right = left + w; bottom = top + h;
+	}
+
+	//static Rect SubtractPosition( const Rect& dest, const Rect& src )
+	//{
+	//	Rect r(dest.left - src.left, dest.top - src.top, dest.right - src.left, dest.bottom - src.top);
+	//	return r;
+	//}
+
+	Rectangle SubtractPosition( const Rectangle& src )
+	{
+		Rectangle r( left - src.left, top - src.top, right - src.left, bottom - src.top );
+		return r;
+	}
+
 };
 
 }
